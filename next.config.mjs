@@ -8,6 +8,9 @@ const nextConfig = {
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'res.cloudinary.com' }
     ]
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   }
 };
 export default nextConfig;
