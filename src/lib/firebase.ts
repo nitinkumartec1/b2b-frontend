@@ -1,5 +1,12 @@
 import { initializeApp, getApps } from 'firebase/app';
-import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
+import { 
+  getAuth, 
+  GoogleAuthProvider, 
+  signInWithPopup, 
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword,
+  signOut
+} from 'firebase/auth';
 import type { Auth } from 'firebase/auth';
 
 const firebaseConfig = {
@@ -20,4 +27,11 @@ function getFirebaseAuth(): Auth {
   return _auth;
 }
 
-export { getFirebaseAuth, RecaptchaVerifier, signInWithPhoneNumber };
+export { 
+  getFirebaseAuth, 
+  GoogleAuthProvider, 
+  signInWithPopup, 
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword,
+  signOut
+};
